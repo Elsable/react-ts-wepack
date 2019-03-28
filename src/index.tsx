@@ -7,7 +7,7 @@ import { ApolloProvider as ApolloHooksProvider } from "react-apollo-hooks";
 import client from "./apolloClient";
 
 import "./globalStyles"
-import 'bootstrap'
+
 import Routes from './Routes/Index';
 
 export default function App(): JSX.Element {
@@ -19,6 +19,7 @@ export default function App(): JSX.Element {
         <ApolloHooksProvider client={client}>
           <Router>
             <main>
+              <a className="btn btn-danger">s</a>
               <Routes/>
             </main>
           </Router>
